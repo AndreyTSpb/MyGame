@@ -11,13 +11,19 @@ class Actions
         when "LEFT"
             system('reset')
             enemy = Enemy.new
-            puts enm1 = enemy.random_enemy(my[:level]+1)
+            puts enm = enemy.random_enemy(my[:level]+1)
         when "RIGTH"
             system('reset')
+            enemy1 = Enemy.new
+            puts enm1 = enemy1.random_enemy(my[:level]+1)
         when "FORWARD"
             system('reset')
+            enemy2 = Enemy.new
+            puts enm2 = enemy2.random_enemy(my[:level]+1)
         when "BACK"
             system('reset')
+            enemy3 = Enemy.new
+            puts enm3 = enemy3.random_enemy(my[:level]+1)
         else 
             puts " there is no such direction of movement (left/rigth/forward/back/save/exit)"
         end
