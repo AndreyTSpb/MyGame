@@ -2,14 +2,22 @@ class Actions
     def initialize(mov, my)
         case mov.upcase 
         when "SAVE"
+            system('reset')
             save_game(my)
         when "EXIT"
+            system('reset')
             puts "Good bay!!!"
             exit
         when "LEFT"
+            system('reset')
+            enemy = Enemy.new
+            puts enm1 = enemy.random_enemy(my[:level]+1)
         when "RIGTH"
+            system('reset')
         when "FORWARD"
+            system('reset')
         when "BACK"
+            system('reset')
         else 
             puts " there is no such direction of movement (left/rigth/forward/back/save/exit)"
         end
