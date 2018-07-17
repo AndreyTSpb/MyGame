@@ -1,3 +1,6 @@
 <name>vasko_pupkin</name>
-<health>9</health>
-<power>1</power>
+<health>29</health>
+<power>12</power><weapon>KNIFE</weapon>
+<armor>ROBE</armor>
+<golds>0</golds>
+<potion>0</potion>

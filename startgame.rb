@@ -17,6 +17,22 @@ class StartGame
                 line.delete!("<power>")
                 line.delete!("</power>")
                 param[:power] = line.strip.to_i
+            elsif line.include?("<weapon>")
+                line.delete!("<weapon>")
+                line.delete!("</weapon>")
+                param[:weapon] = line.strip.to_s
+            elsif line.include?("<armor>")
+                line.delete!("<armor>")
+                line.delete!("</armor>")
+                param[:armor] = line.strip.to_s
+            elsif line.include?("<golds>")
+                line.delete!("<golds>")
+                line.delete!("</golds>")
+                param[:golds] = line.strip.to_i
+            elsif line.include?("<poition>")
+                line.delete!("<poition>")
+                line.delete!("</poition>")
+                param[:poition] = line.strip.to_i
             end
         end
         return param

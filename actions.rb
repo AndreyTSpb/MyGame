@@ -16,7 +16,7 @@ class Actions
     end
 
     def save_game(my)
-        string = "<name>#{my[:name]}</name>\n<health>#{my[:health]}</health>\n<power>#{my[:power]}</power><weapon>#{my[:weapon]}</weapon>\n<armor>#{my[:armor]}</armor>\n<gold>#{my[:gold]}</gold>\n<potion>#{my[:potion]}</potion>" 
+        string = "<name>#{my[:name]}</name>\n<health>#{my[:health]}</health>\n<power>#{my[:power]}</power><weapon>#{my[:weapon]}</weapon>\n<armor>#{my[:armor]}</armor>\n<golds>#{my[:golds]}</golds>\n<potion>#{my[:potion]}</potion>" 
         File.open('saves/test.txt', 'w'){|file| file.write string}
         exit_or_continue
     end
